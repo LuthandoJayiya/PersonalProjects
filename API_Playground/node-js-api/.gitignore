@@ -1,0 +1,109 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node.js / Backend specific ignores
+# ---------------------------------
+node_modules/
+/dist/             # Compiled TypeScript output (as per your current setup)
+/build/            # Another common build output directory
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+.npm/
+.npmrc             # npm config file that may contain auth tokens
+.yarnrc
+.yarn/
+.env               # Environment variables (ALWAYS ignore sensitive data)
+.env.* # Specific environment files like .env.development, .env.production
+.DS_Store          # macOS specific files
+npm-shrinkwrap.json
+yarn.lock          # If you use yarn, but npm handles package-lock.json
+
+# React / Frontend specific ignores
+# ---------------------------------
+# If your React app is within the same root as Node.js,
+# its node_modules will already be ignored by the above.
+# However, if your frontend is in a subfolder (e.g., /client or /frontend),
+# you might have an additional node_modules there.
+# Example: /client/node_modules/
+
+# Create React App (CRA) build output (if applicable)
+/build
+/out
+/public/build # Another common build path
+
+# Parcel cache/build (if applicable)
+.parcel-cache/
+dist/
+
+# Webpack specific ignores
+.webpack/
+
+# ESLint cache
+.eslintcache
+
+# Babel cache
+.babelcache/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# IDE specific ignores
+# --------------------
+.idea/             # JetBrains IDEs (IntelliJ, WebStorm, etc.)
+.vscode/           # VS Code (settings, launch configs - consider ignoring or selectively ignoring)
+*.swp              # Vim swap files
+*.bak              # Backup files
+*.swo
+
+# Docker specific ignores
+# -----------------------
+.dockerignore        # Already included by Docker, but good to ensure
+Dockerfile.bak
+
+# Test / Coverage ignores
+# -----------------------
+/coverage/         # Code coverage reports
+.nyc_output/       # NYC (Istanbul) coverage
