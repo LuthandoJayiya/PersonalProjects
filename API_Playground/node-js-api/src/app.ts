@@ -19,10 +19,7 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Welcome to the Express API!');
 });
 
-//Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+export default app;
 
 // I used postman to test the API
 // I sent a POST request to http://localhost:3000/api/data with a JSON body
