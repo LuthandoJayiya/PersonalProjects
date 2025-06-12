@@ -19,7 +19,7 @@ const ApiTestForm = () => {
 
     try {
       //i can use .env filles to store the API URL, but for simplicity i'll hardcode it
-      const res = await fetch("http://localhost:3000/api/validate", {
+      const res = await fetch("https://personal-projects-4yl5.vercel.app/api/validate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, url }),
